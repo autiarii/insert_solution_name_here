@@ -10,7 +10,7 @@ namespace my_first_calculator
             Console.WriteLine("Insert max number");
             int maxNumber = int.TryParse(Console.ReadLine(), out var number) ? number + 1 : 51;
             string output = $"Write-Host \"Welcome to this calculator!\"{Environment.NewLine}" +
-                            $"Write-Host \"It can add, subtract, multiply and divide whole numbers from 0 to {number}\"{Environment.NewLine}" +
+                            $"Write-Host \"It can add, subtract, multiply and divide whole numbers from 0 to {maxNumber}\"{Environment.NewLine}" +
                             $"[double]$num1 = Read-Host -Prompt \"Please choose your first number\"{Environment.NewLine}" +
                             $"$sign = Read-Host - Prompt \"What do you want to do? +, -, /, or *\"{Environment.NewLine}" +
                             $"[double]$num2 = Read-Host - Prompt \"Please choose your second number\"{Environment.NewLine}";
